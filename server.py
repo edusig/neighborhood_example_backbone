@@ -32,5 +32,5 @@ class ThreadedHTTPServer(ThreadingMixIn, BaseHTTPServer.HTTPServer):
     """Handle requests in a separate thread."""
 
 if __name__ == '__main__':
-    SERVER = ThreadedHTTPServer(('127.0.0.1', 80), CustomHandler)
+    SERVER = ThreadedHTTPServer(('127.0.0.1', 8000), CustomHandler)
     SERVER.serve_forever()
